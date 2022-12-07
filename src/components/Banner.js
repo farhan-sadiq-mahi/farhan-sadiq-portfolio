@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Web Developer", "Web Designer", "Team Leader" ];
+  const toRotate = ["Web Developer", "Web Designer", "MERN Developer"];
   const period = 2000;
 
   useEffect(() => {
@@ -54,22 +54,20 @@ export const Banner = () => {
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility>
               {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Odina`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "Team Leder" ]'><span className="wrap">{text}</span></span></h1>
-                <p>My fullname is Saidnazarova Odinanabonu. I'm 15 years old. I study 249-school in 10th grade.I am a front-end web developer. I can make the website more, more interactive with web animation
-           I study at Web Brain Academy group G5. When I first came to web brain, I had no knowledge of programming.
-           But now with the help of strong aspirations and teachers, my level of knowledge has greatly increased and I can freely create web site views that are used in our daily lives
-        </p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
-              </div>}
+                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                  <span className="tagline">Welcome to my Portfolio</span>
+                  <h1>{`Hi! I'm Md Farhan`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "MERN Developer" ]'><span className="wrap">{text}</span></span></h1>
+                  <p>As a passionate and dedicated MERN stack developer with a strong foundation in web development technologies, I am eager to leverage my skills and knowledge to deliver high-quality and efficient software solutions. With my strong understanding of JavaScript, React, Node.js, and MongoDB, as well as my experience in developing and deploying web applications, I am confident in my ability to contribute to the success of any organization. I am also a quick learner with excellent communication and problem-solving skills, and I am always looking for opportunities to grow and improve as a developer.
+                  </p>
+                  <button onClick={() => console.log('connect')} href='https://www.linkedin.com/in/md-farhan-sadiq-781a851a4/'>Let’s Connect <ArrowRightCircle size={25} /></button>
+                </div>}
             </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={5}>
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src={headerImg} alt="Header Img"/>
+                  <img src={headerImg} alt="Header Img" />
                 </div>}
             </TrackVisibility>
           </Col>
